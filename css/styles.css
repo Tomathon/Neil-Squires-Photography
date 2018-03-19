@@ -1,0 +1,138 @@
+/* general styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic', 'Lucida Grande', Arial, sans-serif;
+}
+
+ul, ol, li {
+    margin-left: 0;
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* landing page */
+
+body {
+    position: relative;
+    animation: fadein 4s;  
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    background: url('../images/Belvoir_lightning.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.table-display {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    animation: fadein 7s;
+}
+
+.logo a img {
+    display: inline-block;
+    width: 100%;
+}
+
+.logo a {
+    text-decoration: none;
+    display: inline-block;
+    width: 50%;
+    z-index: 99;
+}
+
+
+
+/* Fixed Banner */
+
+.contact-banner {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    opacity: 0.5;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.social-box {
+    height: 24px;
+    position: relative;
+}
+
+.social-box a#twitter {
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 50px;
+}
+
+.social-box a#instagram {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+
+.social-box a:hover,
+.contact-box a:hover {
+    opacity: 0.4;
+}
+
+.contact-box {
+    position: absolute;
+    top: 6px;
+    right: 70px;
+}
+
+.contact-box a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #000;
+}
